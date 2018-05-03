@@ -7,7 +7,9 @@ A minimalistic light theme for OCaml.
 
 ## Installing
 
-This extension is available for free in the [Visual Studio Code Marketplace](#).
+This extension is available for free in the ~~[Visual Studio Code Marketplace](#)~~. 
+
+In the mean time you can just install this locally. 
 
 ## Inconsistencies and Bugs
 
@@ -15,4 +17,4 @@ I'm an engineer, not a designer. If you find something that doesn't feel fundeme
 
 ## Credits and Inspiration
 
-The original inspiration came from [Jared Forsyth's own custom coloring for Reason](https://mobile.twitter.com/jaredforsyth/status/977722520202723328).
+This theme is a derivation of [Kary Pro Colors - Light](https://marketplace.visualstudio.com/items?itemName=karyfoundation.theme-karyfoundation-themes) and inspiration from [Jared Forsyth's own custom coloring for Reason](https://mobile.twitter.com/jaredforsyth/status/977722520202723328).
