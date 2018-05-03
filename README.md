@@ -1,5 +1,7 @@
 # OCaml Lite Theme
 <img src="https://img.shields.io/badge/theme-light-brightgreen.svg" />
+<img src="https://img.shields.io/badge/build-passing-brightgreen.svg" />
+<img src="https://img.shields.io/badge/coverage-100%-brightgreen.svg" />
 
 A minimalistic light theme for OCaml.
 
