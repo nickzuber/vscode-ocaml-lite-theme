@@ -1,0 +1,22 @@
+{
+    "name": "ocaml-lite",
+    "displayName": "ocaml-lite",
+    "description": "A minimalistic light theme for OCaml.",
+    "version": "0.0.1",
+    "publisher": "nickzuber",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "OCaml Lite",
+                "uiTheme": "vs",
+                "path": "./themes/ocaml-lite-color-theme.json"
+            }
+        ]
+    }
+}
