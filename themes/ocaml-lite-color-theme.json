@@ -13,6 +13,9 @@
 		"input.border": "#dddddd",
 		"inputOption.activeBorder": "#c94824",
 		"input.placeholderForeground": "#a0a0a0",
+		"dropdown.background": "#e2eeff",
+		"dropdown.foreground": "#3377b9",
+		"dropdown.border": "#c2d0e5",
 		"list.focusBackground": "#e2eefa",
 		"list.focusForeground": "#3778b9",
 		"list.activeSelectionBackground": "#4ca2f7",
@@ -29,10 +32,10 @@
 		"scrollbarSlider.hoverBackground": "#adabaa77",
 		"scrollbarSlider.activeBackground": "#adabaa99",
 		"progressBar.background": "#c94824",
-		"editor.background": "#f7f7f7",
+		"editor.background": "#ffffff",
 		"editorWidget.background": "#f4f4f4",
 		"editorWidget.border": "#cccccc",
-		"editor.selectionBackground": "#67eb556b",
+		"editor.selectionBackground": "#2d2d2d22",
 		"editor.selectionHighlightBackground": "#00000000",
 		"editor.findMatchBackground": "#21ff2149",
 		"editor.findMatchHighlightBackground": "#67eb5255",
@@ -40,8 +43,8 @@
 		"editor.hoverHighlightBackground": "#00000000",
 		"editorHoverWidget.background": "#f7f7f7",
 		"editor.lineHighlightBackground": "#00000007",
-		"editor.lineHighlightBorder": "#efefef",
-		"editorCursor.foreground": "#758e9e",
+		"editor.lineHighlightBorder": "#00000000",
+		"editorCursor.foreground": "#2d2d2dcb",
 		"editorCursor.background": "#f2f2f2",
 		"editorLineNumber.foreground": "#cccccc",
 		"editorBracketMatch.background": "#e2eefa",
@@ -51,8 +54,8 @@
 		"editorSuggestWidget.border": "#dddddd",
 		"editorSuggestWidget.foreground": "#3778b9",
 		"editorSuggestWidget.selectedBackground": "#e2eefa",
-		"editor.wordHighlightBackground": "#67eb553b",
-		"editor.wordHighlightStrongBackground": "#67eb553b",
+		"editor.wordHighlightBackground": "#67eb556b",
+		"editor.wordHighlightStrongBackground": "#67eb556b",
 		"editorOverviewRuler.wordHighlightForeground": "#a56416",
 		"editorOverviewRuler.wordHighlightStrongForeground": "#b052a1",
 		"peekViewTitle.background": "#eeeeee",
@@ -68,20 +71,22 @@
 		"peekViewEditorGutter.background": "#eeeeee",
 		"peekViewResult.matchHighlightBackground": "#e9e2fb",
 		"peekViewEditor.matchHighlightBackground": "#e2eefb",
-		"tab.activeBackground": "#f1f1f1",
+		"tab.activeBackground": "#fcfcfc",
 		"tab.inactiveBackground": "#f1f1f1",
+		"tab.hoverBackground": "#fcfcfc",
 		"tab.border": "#e5e5e5",
-		"tab.activeBorder": "#c94824",
-		"tab.activeForeground": "#a56416",
+		"tab.activeBorder": "#e92a4d",
+		"tab.activeForeground": "#e92a4d",
 		"tab.inactiveForeground": "#aaaaaa",
 		"editorGroupHeader.tabsBackground": "#f1f1f1",
 		"editorGroupHeader.noTabsBackground": "#f1f1f1",
 		"editorGroup.border": "#e0e0e0",
 		"editorGroup.dropBackground": "#f1f1f1",
+		"panel.background": "#f1f1f1",
 		"panel.border": "#e5e5e5",
-		"panelTitle.activeForeground": "#a56416",
+		"panelTitle.activeForeground": "#a66401",
 		"panelTitle.inactiveForeground": "#aaaaaa",
-		"panelTitle.activeBorder": "#a56416",
+		"panelTitle.activeBorder": "#d0481a",
 		"statusBar.foreground": "#adabaa",
 		"statusBar.noFolderForeground": "#ffffff",
 		"statusBar.background": "#eeeeee",
@@ -90,7 +95,7 @@
 		"activityBar.foreground": "#aaaaaa",
 		"activityBarBadge.background": "#c94824",
 		"activityBarBadge.foreground": "#ffffff",
-		"sideBar.background": "#f1f1f1",
+		"sideBar.background": "#fcfcfc",
 		"sideBarTitle.foreground": "#a56416",
 		"sideBarSectionHeader.background": "#f5f5f5",
 		"sideBarSectionHeader.foreground": "#c94824",
@@ -130,7 +135,7 @@
 		{
 			"settings": {
 				"foreground": "#333333ff",
-				"background": "#f7f7f7ff"
+				"background": "#ffffffff"
 			}
 		},
 		{
@@ -554,6 +559,13 @@
 			}
 		},
 		{
+			"name": "CSS Media Operators",
+			"scope": "keyword.operator.logical.only.media.css, keyword.operator.logical.and.media.css",
+			"settings": {
+				"foreground": "#C94824"
+			}
+		},
+		{
 			"name": "Variables",
 			"scope": "variable.other.less",
 			"settings": {
@@ -705,6 +717,13 @@
 			"scope": "meta.var.expr keyword.control.export",
 			"settings": {
 				"foreground": "#B052A1"
+			}
+		},
+		{
+			"name": "JavaScript support class",
+			"scope": "support.class",
+			"settings": {
+				"foreground": "#428226"
 			}
 		},
 		{
@@ -953,29 +972,43 @@
 			}
 		},
 		{
-			"name": "Namespace Operator",
+			"name": "C Namespace Operator",
 			"scope": "punctuation.separator.namespace.access.cpp",
 			"settings": {
 				"foreground": "#B052A1"
 			}
 		},
 		{
-			"name": "Storage Type",
+			"name": "C Storage Type",
 			"scope": "storage.type.c",
 			"settings": {
 				"foreground": "#A56416"
 			}
 		},
 		{
-			"name": "Preproccessor Commands",
+			"name": "C Preproccessor Commands",
 			"scope": "keyword.control.directive.conditional.c",
 			"settings": {
 				"foreground": "#A56416"
 			}
 		},
 		{
-			"name": "Keyword Operators",
+			"name": "C Keyword Operators",
 			"scope": "keyword.operator.c",
+			"settings": {
+				"foreground": "#B052A1"
+			}
+		},
+		{
+			"name": "C Member Variable",
+			"scope": "variable.other.member.c",
+			"settings": {
+				"foreground": "#428226"
+			}
+		},
+		{
+			"name": "C Sizeof Operator",
+			"scope": "keyword.operator.sizeof.c",
 			"settings": {
 				"foreground": "#B052A1"
 			}
@@ -992,6 +1025,34 @@
 			"scope": "name.tag.out.plain.unquoted.string.entity.yaml",
 			"settings": {
 				"foreground": "#428226"
+			}
+		},
+		{
+			"name": "Fish Shell Body",
+			"scope": "source.fish",
+			"settings": {
+				"foreground": "#3778B7"
+			}
+		},
+		{
+			"name": "Fish Shell Variable",
+			"scope": "variable.other.fixed.fish, variable.other.normal.fish",
+			"settings": {
+				"foreground": "#A56416"
+			}
+		},
+		{
+			"name": "Fish Shell Option",
+			"scope": "string.other.option.fish",
+			"settings": {
+				"foreground": "#A56416"
+			}
+		},
+		{
+			"name": "Fish Operator",
+			"scope": "operator.fish",
+			"settings": {
+				"foreground": "#A56416"
 			}
 		},
 		{
@@ -1317,8 +1378,15 @@
 			}
 		},
 		{
+			"name": "GLSL Background Blue",
+			"scope": "source.glsl",
+			"settings": {
+				"foreground": "#3778B7"
+			}
+		},
+		{
 			"name": "Punctuations",
-			"scope": "bracket.php, meta.brace, meta.embedded.expression.jsx, meta.embedded.expression.tsx, meta.namespace.declaration.ts, meta.property-list.scss, punctuation.definition.typeparameters.begin.tsx, punctuation.definition.typeparameters.end.tsx, punctuation.definition.section.case-statement.tsx, punctuation.definition.binding-pattern.object.tsx, punctuation.separator.parameter.tsx, punctuation.definition.arguments.begin.python, punctuation.definition.arguments.end.python, punctuation.definition.block, punctuation.definition.dict.begin.python, punctuation.definition.dict.end.python, punctuation.definition.list.begin.python, punctuation.definition.list.end.python, punctuation.definition.parameters, punctuation.parenthesis.begin.python, punctuation.parenthesis.begin.python, punctuation.parenthesis.end.python, punctuation.section.function.begin.bracket.round.css, punctuation.section.function.begin.python, punctuation.section.function.end.bracket.round.css, punctuation.separator.arguments.python, punctuation.separator.colon.python, punctuation.separator.comma, punctuation.separator.dict.python, punctuation.separator.element.python, punctuation.separator.list.comma.css, punctuation.terminator.statement, meta.brace.angle.ts, punctuation.section.group.applescript, punctuation.definition.array.begin.applescript, punctuation.definition.array.end.applescript, punctuation.definition.begin.bracket.round.go, punctuation.definition.end.bracket.round.go, punctuation.definition.begin.bracket.curly.go, punctuation.definition.end.bracket.curly.go, punctuation.definition.bracket.square.go, punctuation.terminator.go, punctuation.other.period.go, punctuation.other.comma.go, punctuation.definition.imports.begin.bracket.round.go, punctuation.definition.imports.end.bracket.round.go, punctuation.other.colon.go, punctuation.go, punctuation.section.parameters.begin.bracket.round.c, punctuation.section.arguments.end.bracket.round.c, punctuation.section.arguments.begin.bracket.round.c, punctuation.section.parameters.end.bracket.round.c, punctuation.section.block.begin.bracket.curly.c, punctuation.section.block.end.bracket.curly.c, punctuation.section.block.begin.bracket.curly.cpp, punctuation.section.block.end.bracket.curly.cpp, punctuation.section.parens.begin.bracket.round.c, punctuation.section.parens.end.bracket.round.c, punctuation.definition.begin.bracket.square.c, punctuation.definition.end.bracket.square.c, punctuation.separator.dot-access.c, punctuation.terminator.statement.c, punctuation.separator.delimiter.c",
+			"scope": "bracket.php, meta.brace, punctuation.definition.binding-pattern.array.js, meta.embedded.expression.jsx, meta.embedded.expression.tsx, meta.namespace.declaration.ts, punctuation.definition.binding-pattern.array.ts, meta.property-list.scss, punctuation.definition.binding-pattern.array.tsx, punctuation.definition.typeparameters.begin.tsx, punctuation.definition.typeparameters.end.tsx, punctuation.definition.section.case-statement.tsx, punctuation.definition.binding-pattern.object.tsx, punctuation.separator.parameter.tsx, punctuation.definition.arguments.begin.python, punctuation.definition.arguments.end.python, punctuation.definition.block, punctuation.definition.dict.begin.python, punctuation.definition.dict.end.python, punctuation.definition.list.begin.python, punctuation.definition.list.end.python, punctuation.definition.parameters, punctuation.parenthesis.begin.python, punctuation.parenthesis.begin.python, punctuation.parenthesis.end.python, punctuation.section.function.begin.bracket.round.css, punctuation.section.function.begin.python, punctuation.section.function.end.bracket.round.css, punctuation.separator.arguments.python, punctuation.separator.colon.python, punctuation.separator.comma, punctuation.separator.dict.python, punctuation.separator.element.python, punctuation.separator.list.comma.css, punctuation.terminator.statement, meta.brace.angle.ts, punctuation.section.group.applescript, punctuation.definition.array.begin.applescript, punctuation.definition.array.end.applescript, punctuation.definition.begin.bracket.round.go, punctuation.definition.end.bracket.round.go, punctuation.definition.begin.bracket.curly.go, punctuation.definition.end.bracket.curly.go, punctuation.definition.bracket.square.go, punctuation.terminator.go, punctuation.other.period.go, punctuation.other.comma.go, punctuation.definition.imports.begin.bracket.round.go, punctuation.definition.imports.end.bracket.round.go, punctuation.other.colon.go, punctuation.go, punctuation.section.parameters.begin.bracket.round.c, punctuation.section.arguments.end.bracket.round.c, punctuation.section.arguments.begin.bracket.round.c, punctuation.section.parameters.end.bracket.round.c, punctuation.section.block.begin.bracket.curly.c, punctuation.section.block.end.bracket.curly.c, punctuation.section.block.begin.bracket.curly.cpp, punctuation.section.block.end.bracket.curly.cpp, punctuation.section.parens.begin.bracket.round.c, punctuation.section.parens.end.bracket.round.c, punctuation.definition.begin.bracket.square.c, punctuation.definition.end.bracket.square.c, punctuation.separator.dot-access.c, punctuation.terminator.statement.c, punctuation.separator.delimiter.c, punctuation.fish, punctuation.definition.entity.end.bracket.square.css, punctuation.definition.entity.begin.bracket.square.css",
 			"settings": {
 				"foreground": "#1A1A1A"
 			}
